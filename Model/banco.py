@@ -34,17 +34,30 @@ def salvar(produto, preco, quantidade):
     conexao.commit()
     conexao.close()
 
-def listar():
-    
+def listar(pesquisa=""):
     conexao = conectar()
     cursor = conexao.cursor()
 
-    cursor.execute("SELECT * FROM produtos")
+    if pesquisa == "":
+
+        cursor.execute("SELECT * FROM produtos")
+    else:
+        cursor.execute("SELECT * FROM produtos WHERE produto LIKE ?", (f"%{pesquisa}%",))
 
     lista_produtos = cursor.fetchall()
-
     conexao.close()
     return lista_produtos
+
+def buscar(id_produto):
+
+    conexao = conectar()
+    cursor = conexao.cursor()
+
+    cursor.execute("SELECT * FROM produtos WHERE id = ?", (id_produto))
+    produto = cursor.fetchone()
+
+    conexao.close()
+    return produto
 
 def atualizar():
     pass
