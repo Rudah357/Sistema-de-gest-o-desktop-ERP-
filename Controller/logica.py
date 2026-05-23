@@ -61,11 +61,13 @@ def buscar_produto_por_id(id_produto):
         return {"sucesso": False, "mensagem": "Erro ao buscar o ID informado."}
 
 def processar_atualizacao(id_produto, novo_nome, novo_preco, nova_qtd, original):
+
     if not novo_nome or not novo_preco or not nova_qtd:
         messagebox.showwarning("Campos Vazios", "Todos os campos devem estar preenchidos!")
         return False
 
     if novo_nome == original["nome"] and novo_preco == original["preco"] and nova_qtd == original["qtd"]:
+        
         messagebox.showwarning("Nenhuma Alteração", "Nenhuma mudança foi detectada.")
         return False
 
@@ -104,5 +106,5 @@ def obter_dados_grafico():
     return categorias, valores
 
 def obter_lista_produtos(pesquisa=""):
-    
+
     return listar(pesquisa)
