@@ -5,18 +5,18 @@
 ![CustomTkinter](https://img.shields.io/badge/CustomTkinter-Modern_UI-2c3e50?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
 
-Um sistema de Planejamento de Recursos Empresariais (ERP) desktop moderno e intuitivo, desenvolvido em Python. O software foi projetado para otimizar o controle de estoque de produtos, integrando operações completas de CRUD e cálculo automatizado de CMV (Custo das Mercadorias Vendidas).
+Um sistema de Sistema de Gestão em desktop moderno e intuitivo, desenvolvido em Python. O software foi projetado para o ensino e guia para programar em python, integrando operações completas de CRUD estrutura de CMV (Controller, Model e View).
 
 ---
 
 ## 🚀 Funcionalidades
 
 * **CRUD Completo de Produtos:**
-    * **C**reate: Cadastro de novos produtos com especificações detalhadas.
+    * **C**reate: Cadastro de novos produtos.
     * **R**ead: Visualização dinâmica e busca rápida na listagem de itens.
-    * **U**pdate: Edição de dados (preço, quantidade, fornecedor).
-    * **D**elete: Remoção segura de produtos do inventário.
-* **Cálculo de CMV (Custo das Mercadorias Vendidas):** * Módulo integrado para monitorar o custo real do estoque e apoiar a tomada de decisões financeiras.
+    * **U**pdate: Edição de dados (produto, preço, quantidade).
+    * **D**elete: Remoção segura de produtos do banco de dados.
+* **Estruturado em CMV (Controller, Model e View):** * Estrutura feita para melhor organização entre o banco de dados(Model), o backend(Controller) e frontend(View)
 * **Interface Moderna (GUI):**
     * Construída inteiramente com **CustomTkinter**, oferecendo suporte nativo a modo escuro/claro e visual refinado.
 
