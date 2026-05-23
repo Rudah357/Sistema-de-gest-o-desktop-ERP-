@@ -27,23 +27,23 @@ def app():
     painel_lateral.pack_propagate(False)
     painel_lateral.pack(side="left", fill="y")
 
-    img_lista = ctk.CTkImage(light_image=Image.open("listinha.png"), dark_image=Image.open("listinha.png"), size=(35, 35))
+    img_lista = ctk.CTkImage(light_image=Image.open("assets/listinha.png"), dark_image=Image.open("assets/listinha.png"), size=(35, 35))
     button_listar_produtos = ctk.CTkButton(painel_lateral, text="", image=img_lista, width=40, height=40, corner_radius=12, fg_color="#DD8E19", hover_color="#C9831A", command=listar_produtos)
     button_listar_produtos.pack(side="top", pady=40)
 
-    img_atualizar = ctk.CTkImage(light_image=Image.open("atualizar.png"), dark_image=Image.open("atualizar.png"), size=(30, 30))
+    img_atualizar = ctk.CTkImage(light_image=Image.open("assets/atualizar.png"), dark_image=Image.open("assets/atualizar.png"), size=(30, 30))
     button_atualizar_produtos = ctk.CTkButton(painel_lateral, text="", image=img_atualizar, width=45, height=40, corner_radius=12, fg_color="#1FDB6D", hover_color="#1DBB5F", command=atualizar_produtos)
     button_atualizar_produtos.pack(side="top", pady=40)
 
-    img_grafico = ctk.CTkImage(light_image=Image.open("grafico.png"), dark_image=Image.open("grafico.png"), size=(30, 30))
+    img_grafico = ctk.CTkImage(light_image=Image.open("assets/grafico.png"), dark_image=Image.open("assets/grafico.png"), size=(30, 30))
     button_grafico = ctk.CTkButton(painel_lateral, text="", image=img_grafico, width=40, height=40, corner_radius=12, fg_color="#DD1974", hover_color="#C91A6B", command=grafico)
     button_grafico.pack(side="top", pady=40)
 
-    img_deletar = ctk.CTkImage(light_image=Image.open("deletar.png"), dark_image=Image.open("deletar.png"), size=(30, 30))
+    img_deletar = ctk.CTkImage(light_image=Image.open("assets/deletar.png"), dark_image=Image.open("assets/deletar.png"), size=(30, 30))
     button_deletar_produto = ctk.CTkButton(painel_lateral, text="", image=img_deletar, width=40, height=40, corner_radius=12, fg_color="#DA3838", hover_color="#CA2E2E", command=deletar_produto)
     button_deletar_produto.pack(side="top", pady=40)
 
-    img_config = ctk.CTkImage(light_image=Image.open("config.png"), dark_image=Image.open("config.png"), size=(30, 30))
+    img_config = ctk.CTkImage(light_image=Image.open("assets/config.png"), dark_image=Image.open("assets/config.png"), size=(30, 30))
     button_config = ctk.CTkButton(painel_lateral, text="", image=img_config, width=40, height=40, corner_radius=12, fg_color="#D8D8D8", hover_color="#B4B4B4", command=config)
     button_config.pack(side="bottom", pady=50)
 

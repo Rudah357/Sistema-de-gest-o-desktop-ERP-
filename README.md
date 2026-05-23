@@ -39,4 +39,4 @@ Antes de começar, você vai precisar ter o **Python 3.8 ou superior** instalado
 
 1. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
+   git clone [https://github.com/Rudah357/Sistema-de-gestao-desktop-ERP-](https://github.com/Rudah357/Sistema-de-gestao-desktop-ERP-)
