@@ -29,14 +29,3 @@ Um sistema de Sistema de Gestão em desktop moderno e intuitivo, desenvolvido em
 * **Banco de Dados:** SQLite (nativo do Python, ideal para aplicações desktop locais)
 
 ---
-
-## 📦 Como Executar o Projeto
-
-### Pré-requisitos
-Antes de começar, você vai precisar ter o **Python 3.8 ou superior** instalado em sua máquina.
-
-### Passo a Passo
-
-1. **Clone o repositório:**
-   ```bash
-   git clone [https://github.com/Rudah357/Sistema-de-gestao-desktop-ERP-](https://github.com/Rudah357/Sistema-de-gestao-desktop-ERP-)
